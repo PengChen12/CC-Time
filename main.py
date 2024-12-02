@@ -27,14 +27,14 @@ np.random.seed(fix_seed)
 
 parser = argparse.ArgumentParser(description='CC-Time')
 
-parser.add_argument('--model_id', type=str, required=True, default='test')
+parser.add_argument('--model_id', type=str, default='CC-Time')
 parser.add_argument('--checkpoints', type=str, default='./checkpoints/')
 
 parser.add_argument('--root_path', type=str, default='./datasets/ETT-small/')
 parser.add_argument('--data_path', type=str, default='ETTm1.csv')
 parser.add_argument('--data', type=str, default='ett_m_multivariates')
 parser.add_argument('--features', type=str, default='M')
-parser.add_argument('--freq', type=int, default=1)
+parser.add_argument('--freq', type=int, default=0)
 parser.add_argument('--target', type=str, default='OT')
 parser.add_argument('--embed', type=str, default='timeF')
 parser.add_argument('--percent', type=int, default=100)
