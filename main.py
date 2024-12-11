@@ -72,7 +72,7 @@ parser.add_argument('--max_len', type=int, default=-1)
 parser.add_argument('--hid_dim', type=int, default=16)
 parser.add_argument('--tmax', type=int, default=10)
 
-parser.add_argument('--itr', type=int, default=3)
+parser.add_argument('--itr', type=int, default=1)
 parser.add_argument('--cos', type=int, default=0)
 
 parser.add_argument('--use_gpu', type=bool, default=True, help='use gpu')
