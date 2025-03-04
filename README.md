@@ -13,10 +13,12 @@ You can access the well pre-processed datasets from [Google Drive](https://drive
 
 ## Quick Demos
 1. Download datasets and place them under ./datasets.
-2. Download the large language models from [Hugging Face](https://huggingface.co/). The default LLM architecture is [GPT2](https://huggingface.co/openai-community/gpt2).
-3. Since the LLM Channel Layer in CC-Time integrates current correlation and global correlation, we need to use ./models/hugging_gpt2/modeling_gpt2.py to replace the GPT2 architecture modeling_gpt2.py in the transformer library.
-4. Training and testing. Using the ETTm1 dataset as an example, run the following script:
+2. Create a folder called gpt2 and download the pre-trained parameters of [GPT2](https://huggingface.co/openai-community/gpt2) from hugging_face.
     ```
-    run main.py
+    mkdir gpt2
+    python load_gpt2.py
     ```
-   
+3. Training and testing. Training and testing. Using the ETTm1 dataset as an example, run the following script:
+    ```
+    python main.py
+    ```
