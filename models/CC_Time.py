@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch import optim
 from models.ReVIN import RevIN
 from utils.CKA import CKA,CudaCKA
-from transformers.models.gpt2.modeling_gpt2 import GPT2Model
+from custom_transformers.models.gpt2.modeling_gpt2 import GPT2Model
 from transformers import BertTokenizer, BertModel, GPT2Tokenizer
 from einops import rearrange
 from transformers.models.gpt2.configuration_gpt2 import GPT2Config
